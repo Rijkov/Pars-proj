@@ -1,0 +1,25 @@
+ /*
+            foreach (string srt in fpars)
+            {
+                res = srt.split(separators, stringsplitoptions.none);
+                string num = "0, 1 ,2 , 3, 4, 5, 6, 7, 8, 9";
+                string abc = "à,á,â,ã,ä,å,æ,ç,è,é,ê,ë,ì,í,î,ï,ð,ñ,ò,ó,ô,õ,ö,÷,ø,ù,ý,þ,ÿ,à,á,â,ã,ä,å,æ,ç,è,é,ê,ë,ì,í,î,ï,ð,ñ,ò,ó,ô,õ,ö,÷,ø,ù,ý,þ,ÿ";
+                //find i == num; do(srt=+ next(str)) while fpars[i+1]!= abc; 
+                foreach (string dr in res)
+                {
+                    console.writeline(dr);
+                }
+            }
+
+            string[] sss = null;
+            for (int i = 0; i < fpars.length; i++)
+            {
+                sss = regex.split(fpars[i], myreg1);
+            }
+
+            foreach (var s in sss)
+                console.writeline(s);
+            */
+
+
+

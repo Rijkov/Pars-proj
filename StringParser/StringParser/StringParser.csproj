@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\serialize1.txt" />
+    <Content Include="bin\Debug\netcoreapp3.1\serialize2.txt" />
+    <Content Include="bin\Debug\netcoreapp3.1\serialize3.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\.log" />
+  </ItemGroup>
+
+</Project>

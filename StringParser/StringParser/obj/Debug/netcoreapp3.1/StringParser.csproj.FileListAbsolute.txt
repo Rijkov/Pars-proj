@@ -1,0 +1,39 @@
+C:\Users\st10\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.exe
+C:\Users\st10\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.deps.json
+C:\Users\st10\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.runtimeconfig.json
+C:\Users\st10\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.runtimeconfig.dev.json
+C:\Users\st10\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.dll
+C:\Users\st10\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.pdb
+C:\Users\st10\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.AssemblyInfoInputs.cache
+C:\Users\st10\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.AssemblyInfo.cs
+C:\Users\st10\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.csproj.CoreCompileInputs.cache
+C:\Users\st10\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.dll
+C:\Users\st10\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.pdb
+C:\Users\st10\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.genruntimeconfig.cache
+C:\Users\Alex\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.exe
+C:\Users\Alex\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.deps.json
+C:\Users\Alex\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.runtimeconfig.json
+C:\Users\Alex\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.runtimeconfig.dev.json
+C:\Users\Alex\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.dll
+C:\Users\Alex\source\repos\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.pdb
+C:\Users\Alex\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.AssemblyInfo.cs
+C:\Users\Alex\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.dll
+C:\Users\Alex\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.pdb
+C:\Users\Alex\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.genruntimeconfig.cache
+C:\Users\st10\source\repos\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.csprojAssemblyReference.cache
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.exe
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.deps.json
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.runtimeconfig.json
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.runtimeconfig.dev.json
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.dll
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\bin\Debug\netcoreapp3.1\StringParser.pdb
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.csprojAssemblyReference.cache
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.AssemblyInfoInputs.cache
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.AssemblyInfo.cs
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.csproj.CoreCompileInputs.cache
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.dll
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.pdb
+C:\Users\Alex\OneDrive - Автомобильный Дом ООО\StringParser\StringParser\obj\Debug\netcoreapp3.1\StringParser.genruntimeconfig.cache
