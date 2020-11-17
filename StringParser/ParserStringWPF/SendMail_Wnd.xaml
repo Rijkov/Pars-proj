@@ -1,0 +1,40 @@
+﻿<Window x:Class="ParserStringWPF.SendMail_Wnd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParserStringWPF"
+        mc:Ignorable="d"
+        Title="SendMail_Wnd" Height="420.629" Width="406.643" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="162*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="186*"/>
+            <ColumnDefinition Width="87*"/>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="38*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Recipient:" HorizontalAlignment="Left" Margin="28,2.4,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Times New Roman" Grid.Row="1" Height="26" Width="67"/>
+        <TextBox x:Name="recep_txt" HorizontalAlignment="Left" Height="23" Margin="3.4,1.4,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="165" FontSize="14" FontFamily="Times New Roman" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="subj_txt" HorizontalAlignment="Left" Height="23" Margin="1.4,2.4,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="169" FontSize="14" FontFamily="Times New Roman" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="1"/>
+        <Label Content="Message content:" HorizontalAlignment="Left" Margin="30,6.4,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Times New Roman" Grid.Row="5" Height="26" Width="107"/>
+        <ListBox x:Name="messag_txt" HorizontalAlignment="Left" Height="148" Margin="1.4,6,0,0" VerticalAlignment="Top" Width="168" FontSize="14" FontFamily="Times New Roman" Grid.ColumnSpan="2" Grid.Row="5" Grid.Column="1"/>
+        <Label Content="Subject" HorizontalAlignment="Left" Margin="30,3,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Times New Roman" Grid.Row="3" Height="26" Width="51"/>
+        <Button x:Name="send_btn" Content="Send mail" HorizontalAlignment="Left" Margin="4.2,0.4,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2" Grid.Row="7" Height="19" Click="send_btn_Click"/>
+        <Button x:Name="upl_btn" Content="Upload" HorizontalAlignment="Left" Margin="92,0.4,0,0" VerticalAlignment="Top" Width="62" Grid.Row="7" Height="19"  RenderTransformOrigin="1.02,0.54" Click="upl_btn_Click"/>
+        <CheckBox x:Name="upl_chk" Content="With Attachment?" HorizontalAlignment="Left" Margin="156,1.4,0,0.4" Grid.Row="7" Width="114" Checked="upl_chk_Checked" Grid.ColumnSpan="2" Unchecked="upl_chk_Unchecked"/>
+        <TextBox x:Name="upl_txt" HorizontalAlignment="Left" Height="20" Margin="1,1.4,0,0" Grid.Row="7" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="88"/>
+
+
+    </Grid>
+</Window>

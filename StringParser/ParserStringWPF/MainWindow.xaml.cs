@@ -10,6 +10,7 @@
     public partial class MainWindow : Window
     {
         string file_name, file_content;
+        List<string> phNumb;
         bool load_check= false;
 
         public MainWindow()
@@ -125,13 +126,23 @@
             _2nd_list.Items.Clear();
         }
 
+        void send_mail_btn_Click(object sender, RoutedEventArgs e)
+        {
+            new SendMail_Wnd(phNumb.ToArray()).ShowDialog();
+        }
+
         void parse_btb_Click(object sender, RoutedEventArgs e)
         {
+            phNumb = new List<string>();
             if (load_check)
                 Parser.InputArrStr(Init.GetStart1());
             new Parser().ConvertNumbers();
             foreach (var i in Parser.nbrs)
+            {
                 _2nd_list.Items.Add(i);
+                phNumb.Add(i.ToString());
+            }
+            phNumb.RemoveAll(b => b == "\n");
         }
     }
 }
