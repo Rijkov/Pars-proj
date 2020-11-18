@@ -27,10 +27,10 @@
             <RowDefinition Height="76*"/>
         </Grid.RowDefinitions>
 
-        <ListBox x:Name="_1st_list" Grid.Row="1" ScrollViewer.CanContentScroll="False" Background="#FFFFFCD5" FontSize="15" FontFamily="Times New Roman" Grid.RowSpan="10" Grid.ColumnSpan="2" Margin="0,27.6,96.4,-0.2"/>
-        <ListBox x:Name="_2nd_list" Grid.Row="1" ScrollViewer.CanContentScroll="False" Background="#FFFFFCD5" FontSize="15" FontFamily="Times New Roman" Grid.RowSpan="10" Grid.Column="1" Grid.ColumnSpan="2" Margin="96.4,27.6,0.2,-0.2" />
+        <ListBox x:Name="_1st_list" Grid.Row="2" ScrollViewer.CanContentScroll="False" Background="#FFFFFCD5" FontSize="15" FontFamily="Times New Roman" Grid.RowSpan="9" Grid.ColumnSpan="1"/>
+        <ListBox x:Name="_2nd_list" Grid.Row="2" ScrollViewer.CanContentScroll="False" Background="#FFFFFCD5" FontSize="15" FontFamily="Times New Roman" Grid.RowSpan="9" Grid.Column="2"  />
 
-        <Menu Margin="2,0,-1.8,2.4" Grid.ColumnSpan="3">
+        <Menu Margin="2,0,-2,0" Grid.ColumnSpan="3" Height="20" VerticalAlignment="Top">
             <MenuItem Header="Menu">
                 <MenuItem x:Name="open_itm"  Header="Open" Click="open_itm_Click"/>
                 <MenuItem x:Name="load_itm"  Header="Load from array">
@@ -45,8 +45,8 @@
             <MenuItem Header="About"></MenuItem>
         </Menu>
 
-        <Label x:Name="list1_lbl" Content="Select file in Menu" HorizontalAlignment="Left" Margin="206,2.6,0,0.4" Grid.Row="1" Width="160" FontSize="13" FontWeight="Bold"/>
-        <Label Content="Parsed data from txt file" HorizontalAlignment="Left" Margin="190.6,1.6,0,1.4" Width="160" FontSize="13" FontWeight="Bold" Grid.Column="2" Grid.Row="1"/>
+        <Label x:Name="list1_lbl" Content="Select file in Menu" HorizontalAlignment="Right" Margin="0,0,207,0" Grid.Row="1" Width="160" FontSize="13" FontWeight="Bold" Height="25" VerticalAlignment="Bottom"/>
+        <Label Content="Parsed data from txt file" HorizontalAlignment="Right" Margin="0,0,221,1" Width="160" FontSize="13" FontWeight="Bold" Grid.Column="2" Grid.Row="1" Height="25" VerticalAlignment="Bottom"/>
         <Button x:Name="parse_btb" Content="Parse" Grid.Column="1"  Grid.Row="7" FontWeight="Bold" FontFamily="Times New Roman" FontSize="16" Click="parse_btb_Click" />
         <Button x:Name="clear2_btn" Content="Clear List 2" Grid.Column="1"  Grid.Row="5" FontWeight="Bold" FontFamily="Times New Roman" FontSize="16" Click="clear2_btn_Click" />
         <Button x:Name="clear1_btn" Content="Clear List 1" Grid.Column="1"  Grid.Row="3" FontWeight="Bold" FontFamily="Times New Roman" FontSize="16" Click="clear1_btn_Click" />
