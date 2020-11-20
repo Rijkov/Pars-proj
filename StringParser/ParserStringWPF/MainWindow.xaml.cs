@@ -68,8 +68,9 @@
                     sw.Close();
                 }
                 catch { }
+                
             }
-            else if (save.ShowDialog() == true && save.Filter == "XML file (.xml) | *.xml ")
+            else if (save.ShowDialog() == true && save.Filter == "XML file (.xml)|*.xml")
             {
                 file_name = save.FileName;
                 XmlTextWriter xml = new XmlTextWriter(file_name, System.Text.Encoding.Unicode);
