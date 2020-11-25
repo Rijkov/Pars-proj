@@ -31,6 +31,7 @@
                 sr = new StreamReader(file_name);
 
                 file_content = sr.ReadToEnd();
+                sr.Close();
                 if (file_content == "") 
                 {
                     _1st_list.Items.Add("File is EMPTY!!!");
@@ -39,7 +40,13 @@
                 _1st_list.Items.Clear();
                 _1st_list.Items.Add(file_content);
                 list1_lbl.Content = file_name;
-
+                Numbers_Object[] res = Serializations.Deserialize(file_name, StateSerialize.JSON, file_content);
+                if(res != null)
+                {
+                    _1st_list.Items.Clear();
+                    foreach(var i in res)
+                    _1st_list.Items.Add(i);
+                }
                 load_check = false;
             }
             catch { }
@@ -69,7 +76,7 @@
                 }
                 catch { }
             }
-            else if (save.ShowDialog() == true && save.Filter == "XML file (.xml) | *.xml ")
+            else if (save.Filter == "XML file (.xml) | *.xml ")
             {
                 file_name = save.FileName;
                 XmlTextWriter xml = new XmlTextWriter(file_name, System.Text.Encoding.Unicode);

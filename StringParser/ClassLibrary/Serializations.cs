@@ -4,7 +4,8 @@
     using System.IO;
     using System.Xml.Serialization;
     using System.Runtime.Serialization.Formatters.Binary;
-    using System.Text.Json;
+    using Newtonsoft.Json;
+    using System.Collections.Generic;
 
     public enum StateSerialize
     {
@@ -36,20 +37,21 @@
             }
             else if(state == StateSerialize.JSON)
             {
-                foreach (var i in nbrs)
-                {
-                    if (i.GetType() == typeof(Numbers_Object))
-                        code = JsonSerializer.Serialize<Numbers_Object>((Numbers_Object)i);
-                    else
-                    {
-                        code = JsonSerializer.Serialize<string>((string)i);
-                    }
-                }
+                //foreach (object i in nbrs)
+                //{
+                   // if (i.GetType() == typeof(Numbers_Object))
+                        //code = JsonSerializer.Serialize<Numbers_Object>((Numbers_Object)i);
+                    //else
+                    //{
+                        //code = JsonSerializer.Serialize<string>(i as string);
+                        string jsonString = JsonConvert.SerializeObject(nbrs, Formatting.None, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore, Formatting = Formatting.Indented });
+                  //  }
+                //}
                 try
                 {
                     fs = new FileStream(path, FileMode.Create, FileAccess.Write);
                     sw = new StreamWriter(fs);
-                    sw.WriteLine(code);
+                    sw.WriteLine(jsonString);
                 }
                 catch (Exception ex) { msg = ex.Message; }
                 finally { sw.Close(); fs.Close(); }
@@ -70,7 +72,7 @@
             return msg;
         }
 
-        public static Numbers_Object[] Deserialize(string path, StateSerialize state)
+        public static Numbers_Object[] Deserialize(string path, StateSerialize state, string jsonContent = null)
         {
             Numbers_Object[] nbrs = null;
             BinaryFormatter binary = new BinaryFormatter();
@@ -79,9 +81,7 @@
             if(state == StateSerialize.Binary)
             {
                 using(FileStream fs = new FileStream(path, FileMode.Open, FileAccess.ReadWrite))
-                {
                     nbrs = binary.Deserialize(fs) as Numbers_Object[];
-                }
             }
 
             else if(state == StateSerialize.JSON)
@@ -90,12 +90,21 @@
                 try
                 {
                     sr = new StreamReader(fs);
-                    string code = sr.ReadToEnd();
-                    nbrs = new Numbers_Object[code.Length];
-                    for (int i = 0; i < code.Length; i++)
+                    string[] code = new string[15];
+               
+                    Object[] deserializedProduct = JsonConvert.DeserializeObject<Object[]> (jsonContent);
+                    nbrs = new Numbers_Object[deserializedProduct.Length];
+
+                    for (int i = 0; i < deserializedProduct.Length; i++)
                     {
                         nbrs[i] = new Numbers_Object();
-                        nbrs[i] = JsonSerializer.Deserialize<Numbers_Object>(code);
+                        nbrs[i].Number = deserializedProduct[i].ToString();
+                        code[i] = nbrs[i].Number;
+                    }
+                    List<string[]> numbers = new List<string[]>();
+                    for (int i = 0; i < deserializedProduct.Length; i++)
+                    {
+                        numbers[i] = code[i].Split(new char[] { '"' });
                     }
                 }
                 catch { }

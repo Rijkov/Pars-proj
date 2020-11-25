@@ -39,15 +39,10 @@
             }
         }
 
-
-        void upl_chk_Checked(object sender, RoutedEventArgs e)
-        {
+        void upl_chk_Checked(object sender, RoutedEventArgs e) =>
             upl_btn.Visibility = upl_txt.Visibility = Visibility.Visible;
-        }
 
-        void upl_chk_Unchecked(object sender, RoutedEventArgs e)
-        {
+        void upl_chk_Unchecked(object sender, RoutedEventArgs e) =>
             upl_btn.Visibility = upl_txt.Visibility = Visibility.Hidden;
-        }
     }
 }

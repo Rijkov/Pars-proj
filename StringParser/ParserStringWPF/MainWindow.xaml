@@ -45,8 +45,8 @@
             <MenuItem Header="About"></MenuItem>
         </Menu>
 
-        <Label x:Name="list1_lbl" Content="Select file in Menu" HorizontalAlignment="Left" Margin="206,2.6,0,0.4" Grid.Row="1" Width="160" FontSize="13" FontWeight="Bold"/>
-        <Label Content="Parsed data from txt file" HorizontalAlignment="Left" Margin="190.6,1.6,0,1.4" Width="160" FontSize="13" FontWeight="Bold" Grid.Column="2" Grid.Row="1"/>
+        <Label x:Name="list1_lbl" Content="Select file in Menu" HorizontalContentAlignment="Center" Grid.Row="1" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Parsed data from txt file" HorizontalContentAlignment="Center" FontSize="13" FontWeight="Bold" Grid.Column="2" Grid.Row="1" Grid.RowSpan="1"/>
         <Button x:Name="parse_btb" Content="Parse" Grid.Column="1"  Grid.Row="7" FontWeight="Bold" FontFamily="Times New Roman" FontSize="16" Click="parse_btb_Click" />
         <Button x:Name="clear2_btn" Content="Clear List 2" Grid.Column="1"  Grid.Row="5" FontWeight="Bold" FontFamily="Times New Roman" FontSize="16" Click="clear2_btn_Click" />
         <Button x:Name="clear1_btn" Content="Clear List 1" Grid.Column="1"  Grid.Row="3" FontWeight="Bold" FontFamily="Times New Roman" FontSize="16" Click="clear1_btn_Click" />

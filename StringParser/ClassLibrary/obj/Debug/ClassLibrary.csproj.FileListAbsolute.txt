@@ -50,3 +50,5 @@ C:\Users\Alex\source\repos\Pars-proj\StringParser\ClassLibrary\obj\Debug\ClassLi
 C:\Users\Alex\source\repos\Pars-proj\StringParser\ClassLibrary\obj\Debug\ClassLibrary.csproj.CopyComplete
 C:\Users\Alex\source\repos\Pars-proj\StringParser\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\Alex\source\repos\Pars-proj\StringParser\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\Alex\source\repos\Pars-proj\StringParser\ClassLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alex\source\repos\Pars-proj\StringParser\ClassLibrary\bin\Debug\Newtonsoft.Json.xml
