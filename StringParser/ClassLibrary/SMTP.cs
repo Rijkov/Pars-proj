@@ -17,7 +17,7 @@
             msg.Subject = subject;
             msg.Body = content;
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-            client.Credentials = new NetworkCredential("hobgoblih@gmail.com", "Terminator2020");
+            client.Credentials = new NetworkCredential("");
             client.EnableSsl = true;
             client.Send(msg);
         }
